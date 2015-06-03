@@ -2,7 +2,7 @@
   "name": "speedo",
   "version": "0.2.0",
   "description": "Detect features using Promise",
-  "main": "src/speedo.js",
+  "main": "index.js",
   "scripts": {
     "pretest": "standard",
     "test": "gulp test"

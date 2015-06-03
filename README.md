@@ -1,8 +1,8 @@
 # Speedo
 
-[![Join the chat at https://gitter.im/migme/speedo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/migme/speedo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Detect features using Promise
 
+[![Join the chat at https://gitter.im/migme/speedo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/migme/speedo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Dependency Status](https://gemnasium.com/migme/speedo.svg)](https://gemnasium.com/migme/speedo)
 [![Build Status](https://img.shields.io/codeship/274bbce0-ebd2-0132-1b3d-5ecc4fff82a0.svg)](https://codeship.com/projects/81006/)
 [![Code Quality](https://img.shields.io/codacy/77847636043541a1976f3cfe285d4f06.svg)](https://www.codacy.com/app/Migme/speedo)

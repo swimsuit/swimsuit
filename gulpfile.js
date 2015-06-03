@@ -5,6 +5,7 @@ var istanbul = require('gulp-istanbul')
 var isparta = require('isparta')
 var mocha = require('gulp-mocha')
 var codecov = require('gulp-codecov.io')
+var babel = require('gulp-babel')
 
 gulp.task('istanbul', function (cb) {
   gulp.src(['./src/**/*.js'])
@@ -31,6 +32,12 @@ gulp.task('test', ['istanbul'], function (cb) {
 gulp.task('coverage', function () {
   return gulp.src('./coverage/lcov.info')
     .pipe(codecov())
+})
+
+gulp.task('build', function () {
+  return gulp.src('src/speedo.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('default', ['test', 'coverage'])

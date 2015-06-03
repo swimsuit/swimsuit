@@ -1,8 +1,8 @@
 {
   "name": "speedo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Detect features using Promise",
-  "main": "index.js",
+  "main": "src/speedo.js",
   "scripts": {
     "pretest": "standard",
     "test": "gulp test"
@@ -29,6 +29,7 @@
     "babel": "^5.4.7",
     "chai": "^2.3.0",
     "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
     "gulp-codecov.io": "^0.1.2",
     "gulp-istanbul": "^0.9.0",
     "gulp-mocha": "^2.1.0",

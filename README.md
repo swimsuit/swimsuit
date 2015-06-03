@@ -1,4 +1,6 @@
 # Speedo
+
+[![Join the chat at https://gitter.im/migme/speedo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/migme/speedo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Detect features using Promise
 
 [![Dependency Status](https://gemnasium.com/migme/speedo.svg)](https://gemnasium.com/migme/speedo)

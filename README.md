@@ -1,6 +1,10 @@
 # Speedo
 Detect features using Promise
 
+[![Build Status](https://img.shields.io/codeship/274bbce0-ebd2-0132-1b3d-5ecc4fff82a0.svg)](https://codeship.com/projects/81006/)
+[![Code Quality](https://img.shields.io/codacy/77847636043541a1976f3cfe285d4f06.svg)](https://www.codacy.com/app/Migme/speedo)
+[![Code Coverage](http://codecov.io/github/migme/speedo/coverage.svg?branch=master)](http://codecov.io/github/migme/speedo?branch=master)
+
 ## Usage
 
 ### Add a test

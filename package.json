@@ -1,5 +1,5 @@
 {
-  "name": "speedo",
+  "name": "swimsuit",
   "version": "0.2.0",
   "description": "Detect features using Promise",
   "main": "index.js",
@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/migme/speedo.git"
+    "url": "https://github.com/swimsuit/swimsuit.git"
   },
   "keywords": [
-    "speedo",
+    "swimsuit",
     "feature",
     "test",
     "feature",
@@ -22,9 +22,9 @@
   "author": "Migme (https://mig.me)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/migme/speedo/issues"
+    "url": "https://github.com/swimsuit/swimsuit/issues"
   },
-  "homepage": "https://github.com/migme/speedo",
+  "homepage": "https://github.com/swimsuit/swimsuit",
   "devDependencies": {
     "babel": "^5.5.6",
     "chai": "^3.0.0",

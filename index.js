@@ -1,4 +1,4 @@
 require('babel/register')({
   ignore: false
 })
-module.exports = require('./src/speedo')
+module.exports = require('./src/swimsuit')

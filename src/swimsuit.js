@@ -1,4 +1,4 @@
-class Speedo {
+class Swimsuit {
   supports (name, fn) {
     Object.defineProperty(this, name, {
       get: () => {
@@ -9,10 +9,10 @@ class Speedo {
   }
 }
 
-const speedo = new Speedo()
+const swimsuit = new Swimsuit()
 
-speedo.supports('websockets', () => {
+swimsuit.supports('websockets', () => {
   return typeof window !== 'undefined' && typeof window.WebSocket !== 'undefined'
 })
 
-export default speedo
+export default swimsuit

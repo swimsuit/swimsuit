@@ -12,7 +12,7 @@ class Swimsuit {
     if (typeof tests !== 'object') {
       return Promise.reject('You must pass in an object or array of objects')
     }
-    tests = !(tests instanceof Array) ? [tests] : tests
+    tests = tests instanceof Array ? tests : [tests]
     tests.forEach(test => {
       this.supports(test.feature, test.test)
     })

@@ -7,12 +7,17 @@ class Swimsuit {
       }
     })
   }
+
+  load (tests) {
+    tests = typeof tests === 'string' ? tests.split(',') : tests
+    if (!(tests instanceof Array)) {
+      return Promise.reject('You must pass in an array of tests')
+    }
+    tests.forEach(val => {
+      require(`./feature-tests/${val}.js`)
+    })
+    return Promise.resolve()
+  }
 }
 
-const swimsuit = new Swimsuit()
-
-swimsuit.supports('websockets', () => {
-  return typeof window !== 'undefined' && typeof window.WebSocket !== 'undefined'
-})
-
-export default swimsuit
+export default new Swimsuit()

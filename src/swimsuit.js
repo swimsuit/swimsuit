@@ -8,13 +8,13 @@ class Swimsuit {
     })
   }
 
-  load (tests) {
-    tests = typeof tests === 'string' ? tests.split(',') : tests
-    if (!(tests instanceof Array)) {
-      return Promise.reject('You must pass in an array of tests')
+  use (tests) {
+    if (typeof tests !== 'object') {
+      Promise.reject('You must pass in an object or array of objects')
     }
-    tests.forEach(val => {
-      require(`./feature-tests/${val}.js`)
+    tests = !(tests instanceof Array) ? [tests] : tests
+    tests.forEach(test => {
+      this.supports(test.feature, test.test)
     })
     return Promise.resolve()
   }

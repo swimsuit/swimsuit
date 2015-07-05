@@ -1,6 +1,5 @@
 export default {
-  feature: 'geolocation',
-  test: () => {
+  geolocation: () => {
     return typeof window !== 'undefined' &&
       'geolocation' in navigator
   }

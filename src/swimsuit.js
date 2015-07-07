@@ -14,8 +14,9 @@ class Swimsuit {
     }
     tests = tests instanceof Array ? tests : [tests]
     tests.forEach(test => {
-      Object.keys(test).forEach(key => {
-        this.supports(key, test[key])
+      Object.keys(test).forEach(feature => {
+        const predicate = test[feature]
+        this.supports(feature, predicate)
       })
     })
     return Promise.resolve()

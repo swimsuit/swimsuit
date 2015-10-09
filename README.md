@@ -7,6 +7,7 @@ Detect features using Promise
 [![Dependency Status](https://img.shields.io/david/swimsuit/swimsuit.svg)](https://david-dm.org/swimsuit/swimsuit)
 [![Dev Dependency Status](https://img.shields.io/david/dev/swimsuit/swimsuit.svg)](https://david-dm.org/swimsuit/swimsuit#info=devDependencies&view=table)
 [![Build Status](https://img.shields.io/codeship/1ac0e5b0-a2ba-0132-7804-02cfa213237c.svg)](https://codeship.com/projects/65816/)
+[![Build status](https://ci.appveyor.com/api/projects/status/husqw2o1u2xirdi6?svg=true)](https://ci.appveyor.com/project/eddiemoore/swimsuit)
 [![Code Quality](https://img.shields.io/codacy/1673d58a3a564253a83189ba53dd68c6.svg)](https://www.codacy.com/app/swimsuit/swimsuit)
 [![Code Coverage](https://img.shields.io/codecov/c/github/swimsuit/swimsuit.svg)](http://codecov.io/github/swimsuit/swimsuit?branch=master)
 

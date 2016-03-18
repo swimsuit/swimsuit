@@ -13,8 +13,8 @@ class Swimsuit {
       return Promise.reject('You must pass in an object or array of objects')
     }
     tests = tests instanceof Array ? tests : [tests]
-    tests.forEach(test => {
-      Object.keys(test).forEach(feature => {
+    tests.forEach((test) => {
+      Object.keys(test).forEach((feature) => {
         const predicate = test[feature]
         this.supports(feature, predicate)
       })

@@ -6,7 +6,7 @@
   "scripts": {
     "pretest": "standard",
     "mocha": "babel-node ./node_modules/.bin/_mocha",
-    "mocha:cover": "babel-node ./node_modules/isparta/bin/isparta cover _mocha -- -R spec",
+    "mocha:cover": "babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha -- -R spec",
     "test": "npm run mocha:cover",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run test && npm run build",

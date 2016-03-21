@@ -38,4 +38,17 @@ describe('Swimsuit', () => {
 
     expect(Swimsuit.test instanceof Promise).to.be.true
   })
+
+  it('should add support with a promise', (done) => {
+    const returnVal = 'Hello'
+    Swimsuit.supports('wait', () => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(returnVal), 500)
+      })
+    })
+    Swimsuit.wait.then((res) => {
+      expect(res).to.be.equal(returnVal)
+      done()
+    })
+  })
 })

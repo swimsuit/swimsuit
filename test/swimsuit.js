@@ -22,7 +22,7 @@ describe('Swimsuit', () => {
   it('should reject if trying to use a number', (done) => {
     Swimsuit.use(42).catch((err) => {
       expect(err).to.exist
-      expect(err).to.equal('You must pass in an object or array of objects')
+      expect(err.message).to.equal('You must pass in an object or array of objects')
       done()
     })
   })

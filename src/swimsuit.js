@@ -1,4 +1,4 @@
-const Swimsuit = () => ({
+const Swimsuit = {
   supports (name, fn) {
     Object.defineProperty(this, name, {
       get: () => {
@@ -21,6 +21,6 @@ const Swimsuit = () => ({
     })
     return Promise.resolve()
   }
-})
+}
 
-export default Swimsuit()
+export default Swimsuit

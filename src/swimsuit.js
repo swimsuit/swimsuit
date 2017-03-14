@@ -1,4 +1,4 @@
-class Swimsuit {
+const Swimsuit = {
   supports (name, fn) {
     Object.defineProperty(this, name, {
       get: () => {
@@ -6,7 +6,7 @@ class Swimsuit {
         return Promise[retval ? 'resolve' : 'reject'](retval)
       }
     })
-  }
+  },
 
   use (tests) {
     if (typeof tests !== 'object') {
@@ -23,4 +23,4 @@ class Swimsuit {
   }
 }
 
-export default new Swimsuit()
+export default Swimsuit

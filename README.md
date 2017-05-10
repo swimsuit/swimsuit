@@ -1,5 +1,7 @@
 # Swimsuit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/swimsuit/swimsuit.svg)](https://greenkeeper.io/)
+
 Detect features using Promise
 
 [![Join the chat at https://gitter.im/swimsuit/swimsuit](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/swimsuit/swimsuit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

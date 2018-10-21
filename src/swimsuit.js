@@ -14,8 +14,8 @@ const Swimsuit = {
         new Error('You must pass in an object or array of objects')
       )
     }
-    tests = tests instanceof Array ? tests : [tests]
-    tests.forEach(test => {
+    const arr = tests instanceof Array ? tests : [tests]
+    arr.forEach(test => {
       Object.keys(test).forEach(feature => {
         const predicate = test[feature]
         this.supports(feature, predicate)

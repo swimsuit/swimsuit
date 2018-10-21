@@ -1,6 +1,5 @@
 export default {
   geolocation: () => {
-    return typeof window !== 'undefined' &&
-      'geolocation' in navigator
-  }
+    return typeof window !== 'undefined' && 'geolocation' in navigator
+  },
 }

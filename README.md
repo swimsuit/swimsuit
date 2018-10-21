@@ -21,16 +21,20 @@ Detect features using Promise
 import Swimsuit from 'swimsuit'
 
 Swimsuit.supports('websockets', () => {
-  return typeof window !== 'undefined' && typeof window.WebSocket !== 'undefined'
+  return (
+    typeof window !== 'undefined' && typeof window.WebSocket !== 'undefined'
+  )
 })
 ```
 
 ### Check new support
 
 ```js
-Swimsuit.websockets.then(() => {
-  // It supports websockets
-}).catch(() => {
-  // It doesn't support websockets
-})
+Swimsuit.websockets
+  .then(() => {
+    // It supports websockets
+  })
+  .catch(() => {
+    // It doesn't support websockets
+  })
 ```

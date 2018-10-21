@@ -4,9 +4,11 @@
   "description": "Detect features using Promise",
   "main": "lib/swimsuit.js",
   "scripts": {
-    "pretest": "eslint .",
+    "precommit": "npm run lint && lint-staged",
+    "lint": "eslint .",
     "mocha": "babel-node node_modules/mocha/bin/_mocha",
     "mocha:cover": "babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha -- -R spec",
+    "pretest": "npm run lint",
     "test": "npm run mocha:cover",
     "build": "babel src --out-dir lib",
     "prepublish": "npm run test && npm run build",
@@ -37,13 +39,23 @@
     "chai": "^4.1.2",
     "codecov": "3.0.1",
     "eslint": "4.19.0",
+    "eslint-config-prettier": "3.1.0",
     "eslint-config-standard": "11.0.0-beta.0",
     "eslint-plugin-import": "2.10.0",
     "eslint-plugin-node": "6.0.0",
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-standard": "3.1.0",
+    "husky": "1.1.2",
     "isparta": "^4.0.0",
+    "lint-staged": "7.3.0",
     "mocha": "^5.0.0",
-    "mocha-lcov-reporter": "1.3.0"
+    "mocha-lcov-reporter": "1.3.0",
+    "prettier": "1.14.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,css,scss,graphql,json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }

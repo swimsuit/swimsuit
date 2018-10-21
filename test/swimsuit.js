@@ -1,28 +1,30 @@
 /* global describe, it */
-import {expect} from 'chai'
+import { expect } from 'chai'
 import Swimsuit from '../src/swimsuit'
 import websockets from '../src/feature-tests/websockets'
 import geolocation from '../src/feature-tests/geolocation'
 
 describe('Swimsuit', () => {
-  it('should use additional feature tests', (done) => {
+  it('should use additional feature tests', done => {
     Swimsuit.use(websockets).then(() => {
       expect(Swimsuit.websockets).to.exist
       done()
     })
   })
 
-  it('should be able to use an array of feature tests', (done) => {
+  it('should be able to use an array of feature tests', done => {
     Swimsuit.use([geolocation]).then(() => {
       expect(Swimsuit.geolocation).to.exist
       done()
     })
   })
 
-  it('should reject if trying to use a number', (done) => {
-    Swimsuit.use(42).catch((err) => {
+  it('should reject if trying to use a number', done => {
+    Swimsuit.use(42).catch(err => {
       expect(err).to.exist
-      expect(err.message).to.equal('You must pass in an object or array of objects')
+      expect(err.message).to.equal(
+        'You must pass in an object or array of objects'
+      )
       done()
     })
   })
@@ -39,14 +41,14 @@ describe('Swimsuit', () => {
     expect(Swimsuit.test instanceof Promise).to.be.true
   })
 
-  it('should add support with a promise', (done) => {
+  it('should add support with a promise', done => {
     const returnVal = 'Hello'
     Swimsuit.supports('wait', () => {
       return new Promise((resolve, reject) => {
         setTimeout(() => resolve(returnVal), 500)
       })
     })
-    Swimsuit.wait.then((res) => {
+    Swimsuit.wait.then(res => {
       expect(res).to.be.equal(returnVal)
       done()
     })

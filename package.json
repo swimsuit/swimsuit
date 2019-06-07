@@ -50,7 +50,7 @@
     "lint-staged": "8.2.0",
     "mocha": "^5.0.0",
     "mocha-lcov-reporter": "1.3.0",
-    "prettier": "1.18.0"
+    "prettier": "1.18.1"
   },
   "lint-staged": {
     "**/*.{js,jsx,css,scss,graphql,json,md,yml}": [
